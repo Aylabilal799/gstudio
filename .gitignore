@@ -1,0 +1,13 @@
+venv/
+*.onnx
+voices.json
+*.mp4
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.log
+.env
+__pycache__/
+clips.txt
+yt-shorts-bot.zip
