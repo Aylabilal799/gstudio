@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CapCutGlow,DejaVu Sans,75,&H00FFFFFF,&H0000FF00,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,4,2,2,100,100,850,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.57,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}IN
+Dialogue: 0,0:00:00.57,0:00:01.37,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}1971,
+Dialogue: 0,0:00:02.02,0:00:02.12,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}A
+Dialogue: 0,0:00:02.12,0:00:02.37,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}MAN
+Dialogue: 0,0:00:02.37,0:00:02.81,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}BOARDED
+Dialogue: 0,0:00:02.81,0:00:02.96,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}A
+Dialogue: 0,0:00:02.96,0:00:03.33,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}PLANE
+Dialogue: 0,0:00:03.33,0:00:03.94,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}DEMANDED
+Dialogue: 0,0:00:03.94,0:00:04.41,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}$200
+Dialogue: 0,0:00:04.41,0:00:05.32,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5},000,
+Dialogue: 0,0:00:05.86,0:00:06.00,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}AND
+Dialogue: 0,0:00:06.00,0:00:06.29,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}VANISHED
+Dialogue: 0,0:00:06.29,0:00:06.62,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}INTO
+Dialogue: 0,0:00:06.62,0:00:06.90,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}THIN
+Dialogue: 0,0:00:06.90,0:00:07.28,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}AIR,
+Dialogue: 0,0:00:07.70,0:00:07.82,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}NEVER
+Dialogue: 0,0:00:07.82,0:00:08.01,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}TO
+Dialogue: 0,0:00:08.01,0:00:08.19,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}BE
+Dialogue: 0,0:00:08.19,0:00:08.35,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}SEEN
+Dialogue: 0,0:00:08.35,0:00:08.77,CapCutGlow,,0,0,0,,{\1c&H00FF00&\blur5}AGAIN.
