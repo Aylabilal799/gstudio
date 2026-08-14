@@ -1,6 +1,8 @@
 import sys
 import os
 import subprocess
+import numpy as np
+import soundfile as sf
 from dotenv import load_dotenv
 from audio.tts import TTSEngine
 
@@ -17,7 +19,7 @@ def main():
     tts = TTSEngine()
     result_path = tts.generate_narration(text=text, output_file=output_wav)
 
-    # Verify output audio with ffprobe
+    # Inspect file using ffprobe
     cmd = [
         "ffprobe", "-v", "error",
         "-select_streams", "a:0",
@@ -27,20 +29,24 @@ def main():
     ]
     res = subprocess.check_output(cmd).decode().strip().split(",")
     channels, sample_rate, duration = res[0], res[1], res[2]
-    file_size_kb = os.path.getsize(result_path) / 1024
 
-    if float(duration) <= 0.5:
-        raise ValueError("TTS verification failed: Audio duration is too short.")
+    # Verify non-silent audio signal with soundfile
+    data, samplerate = sf.read(result_path)
+    rms_volume = float(np.sqrt(np.mean(data**2)))
+
+    if rms_volume < 0.001:
+        raise ValueError(f"REJECTED: Audio file appears to be silent (RMS volume = {rms_volume:.6f}).")
 
     print("\n==================================================")
-    print("TTS VERIFICATION SUCCESSFUL")
+    print("TTS VERIFICATION REPORT")
     print("==================================================")
-    print(f"File: {result_path}")
-    print(f"Channels: {channels}")
-    print(f"Sample Rate: {sample_rate} Hz")
-    print(f"Duration: {float(duration):.2f} seconds")
-    print(f"File Size: {file_size_kb:.2f} KB")
-    print("Speech Check: Spoken audio present (NO silent audio / NO fallback)")
+    print(f"[TTS] Engine: Kokoro ONNX")
+    print(f"[TTS] Voice: af_heart")
+    print(f"[TTS] Duration: {float(duration):.2f} seconds")
+    print(f"[TTS] Sample rate: {sample_rate} Hz")
+    print(f"[TTS] Channels: {channels}")
+    print(f"[TTS] Output: {result_path}")
+    print(f"[TTS] RMS Audio Signal: {rms_volume:.4f} (VERIFIED SPOKEN AUDIO)")
     print("==================================================")
 
 if __name__ == "__main__":

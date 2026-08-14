@@ -1,0 +1,31 @@
+{
+  "job_id": "job_36e28b66",
+  "story": "I missed my bus by seconds this morning and was honestly annoyed. Then I noticed a tiny dog sitting beside the next stop, wearing a little yellow sweater. I forgot about the bus completely and started laughing. Somehow, missing that bus made my morning better.",
+  "character_bible": {
+    "main_character": "Young man, mid-20s, short dark hair, navy blue jacket, dark trousers, white sneakers",
+    "dog": "Tiny brown dog, floppy ears, yellow knitted sweater"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "prompt": "Cinematic 9:16 portrait scene. Young man, mid-20s, short dark hair, navy blue jacket, dark trousers, and white sneakers, running toward a departing city bus at a modern urban bus stop in soft morning light, natural body movement, frustrated facial expression.",
+      "duration": 5,
+      "file": "output/jobs/job_36e28b66/clips/clip_001.mp4",
+      "status": "completed"
+    },
+    {
+      "scene": 2,
+      "prompt": "Cinematic 9:16 portrait scene. Same young man in navy blue jacket watching the bus leave, looking annoyed, then turning his head and noticing a tiny brown dog in a yellow knitted sweater sitting beside the bus stop bench.",
+      "duration": 5,
+      "file": "output/jobs/job_36e28b66/clips/clip_002.mp4",
+      "status": "completed"
+    },
+    {
+      "scene": 3,
+      "prompt": "Cinematic 9:16 portrait scene. Close-up of same young man smiling and laughing happily while sitting beside the cute tiny dog wearing a yellow sweater at the city bus stop.",
+      "duration": 5,
+      "file": "output/jobs/job_36e28b66/clips/clip_003.mp4",
+      "status": "completed"
+    }
+  ]
+}

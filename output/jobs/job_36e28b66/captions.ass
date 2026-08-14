@@ -1,0 +1,21 @@
+[Script Info]
+Title: GStudio Captions
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,65,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,2,60,60,350,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.73,Default,,0,0,0,,{\b1}I missed my bus by{\b0}
+Dialogue: 0,0:00:01.73,0:00:03.46,Default,,0,0,0,,{\b1}seconds this morning and was{\b0}
+Dialogue: 0,0:00:03.46,0:00:05.19,Default,,0,0,0,,{\b1}honestly annoyed. Then I noticed{\b0}
+Dialogue: 0,0:00:05.19,0:00:06.92,Default,,0,0,0,,{\b1}a tiny dog sitting beside{\b0}
+Dialogue: 0,0:00:06.92,0:00:08.65,Default,,0,0,0,,{\b1}the next stop, wearing a{\b0}
+Dialogue: 0,0:00:08.65,0:00:10.38,Default,,0,0,0,,{\b1}little yellow sweater. I forgot{\b0}
+Dialogue: 0,0:00:10.38,0:00:12.11,Default,,0,0,0,,{\b1}about the bus completely and{\b0}
+Dialogue: 0,0:00:12.11,0:00:13.84,Default,,0,0,0,,{\b1}started laughing. Somehow, missing that{\b0}
+Dialogue: 0,0:00:13.84,0:00:15.57,Default,,0,0,0,,{\b1}bus made my morning better.{\b0}
